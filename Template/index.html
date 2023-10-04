@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-
     <title>Document</title>
+    <style>
+        body {
+            background-color: darkslategray;
+        }
+
+        .navBar {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h3>This is Home page</h3>
-    <p>This is home page paragraph</p>
+    <div class="navBar">
+        <nav>
+            <a href="home">Home</a>
+            <a href="about">About</a>
+            <a href="contacts">Contacts</a>
+            <a href="classes">Classes</a>
+        </nav>
+    </div>
+    <div>{{%CONTENT%}}</div>
 </body>
-<script src="./script/script.js"></script>
+
 </html>
